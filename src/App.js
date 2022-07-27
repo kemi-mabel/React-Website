@@ -5,13 +5,17 @@ import Card from './components/Card';
 import Header from './components/Header'
 import Home from './pages/Home'
 import Footer from './components/Footer'
-import Contactus from './pages/Contactus';
-import Applicationform from './pages/Applicationform';
+import ContactUs from './pages/ContactUs';
+import ApplicationForm from './pages/ApplicationForm';
 import Gallery from './pages/Gallery';
 import Studentdata from './pages/Studentdata';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import About from './pages/About';
-
+import AboutUs from './pages/AboutUs';
+import Post from './pages/Post';
+import Todos from './pages/Todos';
+import Users from './pages/Users';
+import Login from './pages/Login'
+import SingleBlogPage from './pages/SingleBlogPage'
 
 function App() {
   const StudentDetails = [
@@ -75,11 +79,17 @@ function App() {
       })} */}
       
       <Route path='/home' element={<Home/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/applicationform' element={<Applicationform/>}/>
+      <Route path='/about' element={<AboutUs/>}/>
+      <Route path='/applicationform' element={<ApplicationForm/>}/>
       <Route path='/gallery' element={<Gallery/>}/>
-      <Route path='/contactus' element={<Contactus/>}/>
+      <Route path='/contactus' element={<ContactUs/>}/>
       <Route path='/studentData' element={<Studentdata studentDetails= {StudentDetails}/>}/>
+      <Route path='/post' element={<Post/>}/>
+      <Route path='/todos' element={<Todos/>}/>
+      <Route path='/users' element={<Users/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/singleblogpage/:id' element={<SingleBlogPage/>}/>
+
       
       {/* <Applicationform/> */}
       {/* <Studentdata/> */}

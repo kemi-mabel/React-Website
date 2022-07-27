@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Contactus() {
+function ContactUs() {
   return (
-    <section class="container">
+    <section className="container">
     <h1>Contact Us </h1>
         <address>
             <ul> 
@@ -20,5 +20,5 @@ function Contactus() {
   )
 }
 
-export default Contactus
+export default ContactUs
 

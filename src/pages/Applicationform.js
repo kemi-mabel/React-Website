@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Applicationform = () => {
+const ApplicationForm = () => {
   return (
     <section className="container">
           <h1>Applicaton Form</h1>
@@ -58,4 +58,4 @@ const Applicationform = () => {
   )
 }
 
-export default Applicationform
+export default ApplicationForm
